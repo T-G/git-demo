@@ -1,0 +1,24 @@
+// Inheritance
+%class-div {
+    padding: 15px;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+.success{
+    @extend %class-div;
+    background-color: green;
+}
+
+.warning{
+    @extend %class-div;
+    background-color: orange;
+}
+
+.info{
+    @extend %class-div;
+    background-color: yellow;
+}
